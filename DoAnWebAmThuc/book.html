@@ -54,17 +54,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang chủ </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="menu.html">Thực đơn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Về chúng tôi</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="book.html">Book Table</a>
+                <a class="nav-link" href="book.html">Đặt bàn <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             <div class="user_option">
@@ -131,7 +131,7 @@
                 </button>
               </form>
               <a href="" class="order_online">
-                Order Online
+                Đặt trực tuyến
               </a>
             </div>
           </div>
@@ -141,40 +141,66 @@
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Đặt món
+        </h2>
+      </div>
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Tên của bạn" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Số điện thoại" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Địa chỉ" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Số người
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Đặt ngay
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                We Are Feane
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
+          <div class="map_container ">
+            <div id="googleMap"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
+  <!-- end book section -->
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -183,25 +209,25 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Liên hệ chúng tôi
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Địa chỉ: 70 - Nguyễn Huệ
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Liên hệ: +0334336311
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  feane@gmail.com
                 </span>
               </a>
             </div>
@@ -213,8 +239,7 @@
               Feane
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
-            </p>
+              Cửa hàng thức ăn nhanh trực tuyến số một thành phố Huế, đem lại cho khách hàng những sản phẩm chất lượng nhất
             <div class="footer_social">
               <a href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -236,10 +261,10 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Giờ mở cửa
           </h4>
           <p>
-            Everyday
+            Hàng ngày
           </p>
           <p>
             10.00 Am -10.00 Pm
@@ -248,10 +273,10 @@
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          &copy; <span id="displayYear"></span> Mọi hạnh phúc trên đời đều
+          <a href="https://html.design/">xuất phát từ một bữa sáng nhàn nhã</a><br><br>
+          &copy; <span id="displayYear"></span>Hãy mua thức ăn nhanh như nấu
+          <a href="https://themewagon.com/" target="_blank">cho người mình thương yêu nhất - Thức ăn nhanh Feane</a>
         </p>
       </div>
     </div>
